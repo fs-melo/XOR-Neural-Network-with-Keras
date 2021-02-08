@@ -15,23 +15,18 @@ model.add(Dense(1, activation='sigmoid'))
 # Compile model
 model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 # Fit the model
-# history = model.fit(training_data, target_data, validation_split=0.25, epochs=150, batch_size=10, verbose=0)
 history = model.fit(training_data, target_data, epochs=2000, batch_size=1)
 # list all data in history
 print(history.history.keys())
 # summarize history for accuracy
 plt.plot(history.history['acc'])
-# plt.plot(history.history['val_acc'])
 plt.title('model accuracy')
 plt.ylabel('accuracy')
 plt.xlabel('epoch')
-# plt.legend(['train', 'test'], loc='upper left')
 plt.show()
 # summarize history for loss
 plt.plot(history.history['loss'])
-# plt.plot(history.history['val_loss'])
 plt.title('model loss')
 plt.ylabel('loss')
 plt.xlabel('epoch')
-# plt.legend(['train', 'test'], loc='upper left')
 plt.show()
