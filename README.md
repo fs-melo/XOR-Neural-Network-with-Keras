@@ -1,10 +1,10 @@
 # XOR-Neural-Network-with-Keras
 Simple XOR Neural Network with Python and Keras
 
-![XOR Neural Network](image/NN.jpg)
+![XOR Neural Network](result/NN.jpg)
 
 Accuracy:
-![Accuracy](image/acc.png)
+![Accuracy](result/acc.png)
 
 Loss function:
-![Cost](image/loss.png)
+![Cost](result/loss.png)
